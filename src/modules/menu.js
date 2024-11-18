@@ -9,7 +9,19 @@ export default (parent) => {
     h2.textContent = "Light Up Your Lunch With This Lineup";
 
     const ul = document.createElement("ul");
-    ul.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis cum amet molestiae earum est labore temporibus accusantium vitae iusto modi quae, aliquid ab, commodi nulla tempore magnam vel veritatis!";
+    
+    const li_blt = document.createElement("li");
+    li_blt.textContent = "BLT - The classic. Bacon, lettuce and tomato (pronounced however you want)";
+    
+    const li_veg = document.createElement("li");
+    li_veg.textContent = "Sliced Veggie Wraps (aka. Veggie Sushi) - All your favourite veggies wrapped in a soft tortilla. Served sliced to ressemble sushi."
+            
+    const li_hip = document.createElement("li");
+    li_hip.textContent = "The Hipster's Special - Avocado toast. Served on a bread type you've never heard of before."
+
+    ul.appendChild(li_blt);
+    ul.appendChild(li_veg);
+    ul.appendChild(li_hip);
 
     parent.appendChild(h1);
     parent.appendChild(h2);
