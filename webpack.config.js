@@ -10,6 +10,9 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   devtool: "eval-source-map", // displays source files rather than bundled files
+  devServer: { // webpack-dev-server watch list
+    watchFiles: ["./src/template.html"],
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
