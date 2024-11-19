@@ -1,6 +1,4 @@
-import {removeChildren} from "./utility.js";
 export default (parent) => {
-    removeChildren(parent);
 
     const h1 = document.createElement("h1");
     h1.textContent = "Where Are We?";
